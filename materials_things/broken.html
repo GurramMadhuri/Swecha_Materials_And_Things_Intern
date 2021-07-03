@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Broken/Non broken materials</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap css link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap js link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- css file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+<script type="text/javascript">
+  
+function breakable1()
+{
+  var bo1 = document.getElementById('img2');
+  if (bo1.src.match("./images/glassbottle_nb.jpg"))
+    {
+      img2.src = "./images/bottle_b.jpg";
+    }
+  }
+
+function breakable2()
+{
+  var bo2 = document.getElementById('img4');
+  if (bo2.src.match("./images/piggyBank_nb.jpg")){
+    img4.src = "./images/piggyBank_b.jpg";
+  }
+}
+       
+function breakable3()
+{ 
+  var bo3 = document.getElementById('img6');
+  if (bo3.src.match("./images/car_nb.jpg"))
+    {
+      img6.src = "./images/car_b.jpg";
+    }
+  }
+
+
+
+function nonbreakable1()
+{
+  var nbo1 = document.getElementById('img1');
+  if (nbo1.src.match("./images/bag_nb.jpg"))
+    {
+      alert("THIS OBJECT IS NOT BREAKABLE OBJECT");
+    }
+  }
+
+function nonbreakable2()
+{
+  var nbo2 = document.getElementById('img3');
+  if (nbo2.src.match("./images/table.jpg")){
+      alert("THIS OBJECT IS NOT BREAKABLE OBJECT");
+  }
+}
+       
+function nonbreakable3()
+{ 
+  var nbo3 = document.getElementById('img5');
+  if (nbo3.src.match("./images/pillow.jpg"))
+    {
+      alert("THIS OBJECT IS NOT BREAKABLE OBJECT");
+    }
+  }
+
+
+
+
+
+
+
+
+function reset()
+{
+ document.getElementById('img2').src="./images/glassbottle_nb.jpg";
+ document.getElementById('img4').src="./images/piggyBank_nb.jpg";
+ document.getElementById('img6').src="./images/car_nb.jpg";
+}
+
+ </script>
+
+
+
+
+<style type="text/css">
+  #b1,#b2,#b3,#nb1,#nb2,#nb3,#b4,#b5,#b6{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#b1,#b2,#b3,#nb1,#nb2,#nb3 {
+  background-color: white; 
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#nb1:hover,#nb2:hover,#nb3:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4CAF50;
+  color: white;
+}
+
+#b4,#b5,#b6 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+#b4:hover,#b5:hover,#b6:hover  {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<!-- Navbar begins -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#" style="font-size: 30px;">MATERIALS AND THINGS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="font-size: 28px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="textbook.html" style="font-size: 28px;">TextBook</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="quiz.html" style="font-size: 28px;">Quiz</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Navbar ends -->
+
+
+
+<br>
+<br>
+<center><div style="background-color: orange;width: 90%"><h1 style="color: white;">BREAKABLE AND NON-BREAKABLE OBJECTS</h1></div></center>
+
+<br>
+<br>
+
+
+<br>
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img1" src="./images/bag_nb.jpg"  style="padding: 30px;width:250px;height: 250px;display: block;border:3px solid black;">
+        <button style="margin: 10px;" id="nb1" onclick="nonbreakable1()" >BREAK</button>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img2" src="./images/glassbottle_nb.jpg"   style="padding: 30px;width:250px;height: 250px;display: block;border:3px solid black;">
+        <button style="margin: 10px;" id="b1" onclick="breakable1()">BREAK</button>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+          <img id="img3" src="./images/table.jpg"   style="padding: 30px;width:250px;height: 250px;display: block;border:3px solid black;">
+        <button style="margin: 10px;" id="nb2"  onclick="nonbreakable2()">BREAK</button>
+        </div>
+      </div>
+    </section>
+  </center>
+
+
+
+
+
+<br>
+<br>
+<br>
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img4" src="./images/piggyBank_nb.jpg"  style="padding: 30px;border:3px solid black;width: 250px;height: 250px;display: block;">
+        <button style="margin: 10px;" id="b2" onclick="breakable2()">BREAK</button>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img5" src="./images/pillow.jpg"  style="padding: 30px;width: 250px;height: 250px;display: block;border:3px solid black;">
+        <button style="margin: 10px;" id="nb3" onclick="nonbreakable3()">BREAK</button>
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+          <img id="img6" src="./images/car_nb.jpg"   style="padding: 30px;width: 250px;height: 250px;display: block;border:3px solid black;">
+        <button style="margin: 10px;" id="b3" onclick="breakable3()">BREAK</button>
+        </div>
+      </div>
+    </section>
+  </center>
+
+<br>
+<br>
+  
+  <center><button id="b6" onclick="reset()">RESET</button></center>
+
+<a style="margin-bottom: 40px;margin-left: 60px;" href="soluble_insoluble.html"><button id="b4">PREVIOUS</button></a>
+<a style="float: right;margin-bottom: 40px;margin-right: 60px;" href="tto.html"><button id="b5">NEXT</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

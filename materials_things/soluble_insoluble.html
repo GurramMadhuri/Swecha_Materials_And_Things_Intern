@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>soluble and insoluble</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap css link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap js link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- css file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+<style type="text/css">
+  #snackbar1,#snackbar2,#snackbar3,#snackbar4,#snackbar5,#snackbar6
+{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar1.show,#snackbar2.show,#snackbar3.show,#snackbar4.show,#snackbar5.show,#snackbar6.show{
+  visibility: visible;
+  -webkit-animation:fadein 0.5s,fadeout 0.5s 1.5s ;
+  
+}
+
+
+
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#b1,#b2,#b3,#b4,#b5,#b6 {
+  background-color: white; 
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover,#b5:hover,#b6:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4CAF50;
+  color: white;
+}
+
+#b7,#b8 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+#b7:hover,#b8:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript">
+  
+function check1()
+{
+
+      img1_b.src = "./images/rbulbon.png";
+      var y=document.getElementById("snackbar1");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }
+
+function check2()
+{
+
+      img2_b.src = "./images/gbulbon.png";
+      var y=document.getElementById("snackbar2");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }function check3()
+{
+
+      img3_b.src = "./images/rbulbon.png";
+      var y=document.getElementById("snackbar3");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }function check4()
+{
+
+      img4_b.src = "./images/gbulbon.png";
+      var y=document.getElementById("snackbar4");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }function check5()
+{
+
+      img5_b.src = "./images/rbulbon.png";
+      var y=document.getElementById("snackbar5");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }
+    function check6()
+{
+
+      img6_b.src = "./images/gbulbon.png";
+      var y=document.getElementById("snackbar6");
+  y.className="show";
+  setTimeout(function(){
+    y.className=y.className.replace("show","");
+  },2000);
+
+    }
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<!-- Navbar begins -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#" style="font-size: 30px;">MATERIALS AND THINGS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="font-size: 28px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="textbook.html" style="font-size: 28px;">TextBook</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="quiz.html" style="font-size: 28px;">Quiz</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Navbar ends -->
+
+
+<br>
+<br>
+<center><div style="background-color: orange;width: 90%"><h1 style="color: white;">SOLUBLE AND INSOLUBLE MATERIALS</h1></div></center>
+
+<br>
+<br>
+
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img1" src="./images/marble.jpg"  style="padding: 10px;width:240px;height: 240px;display: block;border:3px solid black;">
+         <img id="img1_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+
+        <button style="margin: 10px;" id="b1" onclick="check1()" >Click Here!!</button>
+        <div id="snackbar1"> MARBLE  IS NOT SOLUBLE IN WATER!!!</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img2" src="./images/salt.jpg"   style="padding: 10px;width:240px;height: 240px;display: block;border:3px solid black;">
+          <img  id="img2_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+        <button style="margin: 10px;" id="b2" onclick="check2()">Click Here!!</button>
+        <div id="snackbar2">SALT IS  SOLUBLE IN WATER!!!</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+          <img id="img3" src="./images/iron.jpg"   style="padding: 10px;width:240px;height: 240px;display: block;border:3px solid black;">
+           <img id="img3_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+        <button style="margin: 10px;" id="b3"  onclick="check3()">Click Here!!</button>
+        <div id="snackbar3">IRON IS NOT SOLUBLE IN WATER!!!</div>
+
+        </div>
+      </div>
+    </section>
+  </center>
+
+
+
+
+
+<br>
+<br>
+<br>
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img4" src="./images/sugar.jpg"  style="padding: 10px;border:3px solid black;width: 200px;height: 200px;display: block;">
+          <img id="img4_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+        <button style="margin: 10px;" id="b4" onclick="check4()">Click Here!!</button>
+        <div id="snackbar4">SUGAR IS SOLUBLE IN WATER!!!</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+         <img id="img5" src="./images/wood.jpg"  style="padding: 10px;width: 200px;height: 200px;display: block;border:3px solid black;">
+          <img id="img5_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+        <button style="margin: 10px;" id="b5" onclick="check5()">Click Here!!</button>
+        <div id="snackbar5">WOOD IS NOT SOLUBLE IN WATER!!!</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-4">
+          <img id="img6" src="./images/honey.jpg"   style="padding: 10px;width: 200px;height: 200px;display: block;border:3px solid black;">
+           <img id="img6_b" src="./images/bulboff.jpg" style="width: 100px;height: 100px;margin-top: 10px;margin-bottom: 10px;">
+        <button style="margin: 10px;" id="b6" onclick="check6()">Click Here!!</button>
+        <div id="snackbar6">HONEY IS SOLUBLE IN WATER!!!</div>
+
+        </div>
+      </div>
+    </section>
+  </center>
+
+<br>
+<br>
+  
+
+
+<a  style="margin-bottom: 40px;margin-left: 60px;" href="sink_float.html"><button id="b7">PREVIOUS</button></a>
+<a style="float: right;margin-bottom: 40px;margin-right: 60px;" href="broken.html"><button id="b8">NEXT</button></a>
+
+</body>
+</html>

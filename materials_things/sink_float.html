@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap css link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap js link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="https://www.jqwidgets.com/public/jqwidgets/styles/jqx.energyblue.css" type="text/css" />
+    <script type="text/javascript" src="https://www.jqwidgets.com/public/jqwidgets/jqx-all.js"></script>
+    <script type="text/javascript" src="https://www.jqwidgets.com/public/jqwidgets/globalization/globalize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+@media screen and (max-width: 500px) {
+           #img1,#img2,#img3,#img4{
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            justify-content: space-around;
+            display: flex;
+            }
+          }
+        @media only screen and (min-width: 481px) and (max-width: 767px){
+           #img1,#img2,#img3,#img4{
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            justify-content: space-around;
+            display: flex;
+          }
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1000px){
+           #img1,#img2,#img3,#img4{
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            justify-content: space-around;
+            display: flex;
+          }
+        }
+        @media only screen and (min-width:0px) and (max-width:480px){
+         #img1,#img2,#img3,#img4{
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            justify-content: space-around;
+            display: flex;
+          }
+        } 
+}
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+#b7{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#b7 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+#b7:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+#img1,#img2 {
+  position: relative;
+  animation: myfirst 3s linear 3s infinite alternate;
+}
+#img3,#img4
+{
+  position: relative;
+  animation: second 3s linear 1s infinite  reverse ;
+
+}
+
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:150px; top:0px;}
+  50%  { left:150px; top:150px;}
+  75%  { left:0px; top:150px;}
+  100% {left:0px; top:0px;}
+}
+@keyframes second {
+  0%   { left:0px; top:0px;}
+  25%  {left:150px; top:0px;}
+  50%  { left:100px; top:100px;}
+  75%  { left:0px; top:100px;}
+  100% {left:0px; top:0px;}
+}
+
+
+}
+</style>
+</head>
+<body>
+<!-- Navbar begins -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#" style="font-size: 30px;">MATERIALS AND THINGS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" style="font-size: 28px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="textbook.html" style="font-size: 28px;">TextBook</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link" href="quiz.html" style="font-size: 28px;">Quiz</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Navbar ends -->
+
+
+<br>
+<br>
+<center><div style="background-color: orange;width: 80%"><h1 style="color: white;">SINK AND FLOAT OBJECTS</h1></div></center>
+
+<center><h4>Click on the images to know which objects will float and which objects will sink in water</h4></center>
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6">
+         <img  id="img1" style="width: 200px;height: 200px;border:2px solid black;padding: 20px;"  src="./images/rock_floatt.jpg" alt="sink and float objects image">
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6">
+         <img  id="img2" style="width: 200px;height: 200px;border:2px solid black;padding: 20px;" src="./images/wood_float.jpg">
+
+        </div>
+      </div>
+    </section>
+  </center>
+
+<center>
+    <section>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6">
+         <img id="img3" style="width: 200px;height: 200px;padding: 20px;border:2px solid black;margin-top: 10px;"  src="./images/plastic_float.jpg" alt="sink and float objects image">
+        </div>
+        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6">
+         <img id="img4" style="width: 200px;height: 200px;padding: 20px;border:2px solid black;margin-top: 10px;" src="./images/marble.jpg">
+
+        </div>
+      </div>
+    </section>
+  </center>
+<br>
+<br>
+<a  style="margin-bottom: 40px;margin-left: 60px;" href="index.html"><button id="b7">PREVIOUS</button></a>
+<a style="float: right;margin-bottom: 40px;margin-right: 60px;" href="soluble_insoluble.html"><button id="b7">NEXT</button></a>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="text">THIS OBJECT WILL SINK IN WATER</h2>
+            <span class="close">&times;</span>
+
+    </div>
+    <div class="modal-body">
+      <center><img id="dialogueimg" style="width: 200px;height: 200px;" src="./images/rock_sink.jpg"></center>
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var imgg1 = document.getElementById("img1");
+var imgg2 = document.getElementById("img2");
+var imgg3 = document.getElementById("img3");
+var imgg4 = document.getElementById("img4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+imgg1.onclick = function() {
+  document.getElementById('text').innerHTML="THIS OBJECT WILL SINK IN WATER";
+  document.getElementById('dialogueimg').src="./images/rock_sink.jpg";
+  modal.style.display = "block";
+}
+
+imgg2.onclick = function() {
+  document.getElementById('text').innerHTML="THIS OBJECT WILL FLOAT ON WATER";
+  document.getElementById('dialogueimg').src="./images/wood_float.jpg";
+  modal.style.display = "block";
+}
+imgg3.onclick = function() {
+    document.getElementById('text').innerHTML="THIS OBJECT WILL FLOAT ON WATER";
+      document.getElementById('dialogueimg').src="./images/plastic_float.jpg";
+
+  modal.style.display = "block";
+}
+imgg4.onclick = function() {
+    document.getElementById('text').innerHTML="THIS OBJECT WILL SINK IN WATER";
+  document.getElementById('dialogueimg').src="./images/marbles_sink.jpg";
+
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

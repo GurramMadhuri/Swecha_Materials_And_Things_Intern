@@ -1,1 +1,3 @@
-# Swecha_Materials_And_Things_Intern
+# Materials and Things
+
+Developed by Team Code Blenders

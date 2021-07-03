@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TextBook</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap css link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap js link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <!-- css file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+
+<script type="text/javascript">
+	
+
+ function telugu()
+ {
+  document.getElementById('pdf').src="textbook_telugu.pdf";
+ }
+
+function english()
+ {
+  document.getElementById('pdf').src="textbook_english.pdf";
+ }
+
+
+
+</script>
+
+
+<body>
+
+<!-- Navbar begins -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#" style="font-size: 30px;">MATERIALS AND THINGS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="font-size: 28px;">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="textbook.html" style="font-size: 28px;">TextBook</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="quiz.html" style="font-size: 28px;">Quiz</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Navbar ends -->
+
+<br>
+<br>
+
+
+<center><button class="btn-primary" style="font-size: 20px;" onclick="telugu()">TELUGU</button>
+<button class="btn-primary" style="font-size: 20px;" onclick="english()">ENGLISH</button></center>
+
+
+<br>
+<br>
+ <center><embed id="pdf" src="textbook_english.pdf" type="application/pdf" width="80%" height="900px" /></center> 
+
+
+
+
+</body>
+</html>
